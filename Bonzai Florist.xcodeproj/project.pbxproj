@@ -3,19 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BA870E6046751879CFB2851 /* Pods_Bonzai_Florist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCE8D9113235470F97D14F2 /* Pods_Bonzai_Florist.framework */; };
 		DA63B1792389F62800178EFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63B1782389F62800178EFD /* AppDelegate.swift */; };
 		DA63B17B2389F62800178EFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63B17A2389F62800178EFD /* SceneDelegate.swift */; };
 		DA63B17D2389F62800178EFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63B17C2389F62800178EFD /* ViewController.swift */; };
 		DA63B1802389F62800178EFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA63B17E2389F62800178EFD /* Main.storyboard */; };
 		DA63B1822389F62F00178EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA63B1812389F62F00178EFD /* Assets.xcassets */; };
 		DA63B1852389F62F00178EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA63B1832389F62F00178EFD /* LaunchScreen.storyboard */; };
+		DA83B6512391F6FD00157FB6 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA83B6502391F6FD00157FB6 /* SignUpController.swift */; };
+		DA83B6532391FD6800157FB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA83B6522391FD6800157FB6 /* GoogleService-Info.plist */; };
+		DA83B6552391FFCC00157FB6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA83B6542391FFCC00157FB6 /* HomeController.swift */; };
+		DA83B6572392035100157FB6 /* Flowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA83B6562392035100157FB6 /* Flowers.swift */; };
+		DA83B659239205E700157FB6 /* FlowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA83B658239205E700157FB6 /* FlowerTableViewCell.swift */; };
+		DA83B65C239209B700157FB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA83B65B239209B700157FB6 /* Constants.swift */; };
+		DA83B65E2392D37700157FB6 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA83B65D2392D37700157FB6 /* Photo.swift */; };
+		DA83B6602392D40E00157FB6 /* FlowerDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA83B65F2392D40E00157FB6 /* FlowerDetailController.swift */; };
+		DA83B6632393445E00157FB6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA83B6622393445E00157FB6 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A69EC3455EBDB16C325D476C /* Pods-Bonzai Florist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonzai Florist.release.xcconfig"; path = "Target Support Files/Pods-Bonzai Florist/Pods-Bonzai Florist.release.xcconfig"; sourceTree = "<group>"; };
+		A70E834A1285FFBB431B7256 /* Pods-Bonzai Florist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonzai Florist.debug.xcconfig"; path = "Target Support Files/Pods-Bonzai Florist/Pods-Bonzai Florist.debug.xcconfig"; sourceTree = "<group>"; };
+		AFCE8D9113235470F97D14F2 /* Pods_Bonzai_Florist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bonzai_Florist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA63B1752389F62800178EFD /* Bonzai Florist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bonzai Florist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA63B1782389F62800178EFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA63B17A2389F62800178EFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +37,15 @@
 		DA63B1812389F62F00178EFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA63B1842389F62F00178EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA63B1862389F62F00178EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA83B6502391F6FD00157FB6 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		DA83B6522391FD6800157FB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DA83B6542391FFCC00157FB6 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		DA83B6562392035100157FB6 /* Flowers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flowers.swift; sourceTree = "<group>"; };
+		DA83B658239205E700157FB6 /* FlowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerTableViewCell.swift; sourceTree = "<group>"; };
+		DA83B65B239209B700157FB6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DA83B65D2392D37700157FB6 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		DA83B65F2392D40E00157FB6 /* FlowerDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerDetailController.swift; sourceTree = "<group>"; };
+		DA83B6622393445E00157FB6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA870E6046751879CFB2851 /* Pods_Bonzai_Florist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37861C3A6551A82961B6AD11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A70E834A1285FFBB431B7256 /* Pods-Bonzai Florist.debug.xcconfig */,
+				A69EC3455EBDB16C325D476C /* Pods-Bonzai Florist.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B7B4A42C2579D0BAA7E2FEE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFCE8D9113235470F97D14F2 /* Pods_Bonzai_Florist.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA63B16C2389F62800178EFD = {
 			isa = PBXGroup;
 			children = (
 				DA63B1772389F62800178EFD /* Bonzai Florist */,
 				DA63B1762389F62800178EFD /* Products */,
+				37861C3A6551A82961B6AD11 /* Pods */,
+				B7B4A42C2579D0BAA7E2FEE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +98,64 @@
 		DA63B1772389F62800178EFD /* Bonzai Florist */ = {
 			isa = PBXGroup;
 			children = (
+				DA83B6612393444B00157FB6 /* Helpers */,
+				DA83B65A2392099F00157FB6 /* Constants */,
+				DA83B64F2391F38900157FB6 /* Controller */,
+				DA83B64E2391F38300157FB6 /* Model */,
+				DA83B64D2391F37A00157FB6 /* View */,
 				DA63B1782389F62800178EFD /* AppDelegate.swift */,
 				DA63B17A2389F62800178EFD /* SceneDelegate.swift */,
-				DA63B17C2389F62800178EFD /* ViewController.swift */,
-				DA63B17E2389F62800178EFD /* Main.storyboard */,
 				DA63B1812389F62F00178EFD /* Assets.xcassets */,
+				DA83B6522391FD6800157FB6 /* GoogleService-Info.plist */,
 				DA63B1832389F62F00178EFD /* LaunchScreen.storyboard */,
 				DA63B1862389F62F00178EFD /* Info.plist */,
 			);
 			path = "Bonzai Florist";
+			sourceTree = "<group>";
+		};
+		DA83B64D2391F37A00157FB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA63B17E2389F62800178EFD /* Main.storyboard */,
+				DA83B658239205E700157FB6 /* FlowerTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA83B64E2391F38300157FB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA83B6562392035100157FB6 /* Flowers.swift */,
+				DA83B65D2392D37700157FB6 /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA83B64F2391F38900157FB6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA63B17C2389F62800178EFD /* ViewController.swift */,
+				DA83B6502391F6FD00157FB6 /* SignUpController.swift */,
+				DA83B6542391FFCC00157FB6 /* HomeController.swift */,
+				DA83B65F2392D40E00157FB6 /* FlowerDetailController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA83B65A2392099F00157FB6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DA83B65B239209B700157FB6 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DA83B6612393444B00157FB6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DA83B6622393445E00157FB6 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA63B1892389F62F00178EFD /* Build configuration list for PBXNativeTarget "Bonzai Florist" */;
 			buildPhases = (
+				5020DE649D95B7FEE06C5C87 /* [CP] Check Pods Manifest.lock */,
 				DA63B1712389F62800178EFD /* Sources */,
 				DA63B1722389F62800178EFD /* Frameworks */,
 				DA63B1732389F62800178EFD /* Resources */,
+				C91B5CE5006EB5CFDA00A78D /* [CP] Embed Pods Frameworks */,
+				835290A76D60465C2705E41A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA63B1852389F62F00178EFD /* LaunchScreen.storyboard in Resources */,
+				DA83B6532391FD6800157FB6 /* GoogleService-Info.plist in Resources */,
 				DA63B1822389F62F00178EFD /* Assets.xcassets in Resources */,
 				DA63B1802389F62800178EFD /* Main.storyboard in Resources */,
 			);
@@ -133,14 +228,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5020DE649D95B7FEE06C5C87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bonzai Florist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		835290A76D60465C2705E41A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bonzai Florist/Pods-Bonzai Florist-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bonzai Florist/Pods-Bonzai Florist-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bonzai Florist/Pods-Bonzai Florist-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C91B5CE5006EB5CFDA00A78D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bonzai Florist/Pods-Bonzai Florist-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bonzai Florist/Pods-Bonzai Florist-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bonzai Florist/Pods-Bonzai Florist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA63B1712389F62800178EFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA83B6572392035100157FB6 /* Flowers.swift in Sources */,
 				DA63B17D2389F62800178EFD /* ViewController.swift in Sources */,
 				DA63B1792389F62800178EFD /* AppDelegate.swift in Sources */,
+				DA83B6602392D40E00157FB6 /* FlowerDetailController.swift in Sources */,
+				DA83B65E2392D37700157FB6 /* Photo.swift in Sources */,
 				DA63B17B2389F62800178EFD /* SceneDelegate.swift in Sources */,
+				DA83B6512391F6FD00157FB6 /* SignUpController.swift in Sources */,
+				DA83B659239205E700157FB6 /* FlowerTableViewCell.swift in Sources */,
+				DA83B6552391FFCC00157FB6 /* HomeController.swift in Sources */,
+				DA83B6632393445E00157FB6 /* Extensions.swift in Sources */,
+				DA83B65C239209B700157FB6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +444,7 @@
 		};
 		DA63B18A2389F62F00178EFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A70E834A1285FFBB431B7256 /* Pods-Bonzai Florist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +463,7 @@
 		};
 		DA63B18B2389F62F00178EFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A69EC3455EBDB16C325D476C /* Pods-Bonzai Florist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
