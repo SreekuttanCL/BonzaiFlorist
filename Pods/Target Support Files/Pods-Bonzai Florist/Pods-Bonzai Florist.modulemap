@@ -1,0 +1,6 @@
+framework module Pods_Bonzai_Florist {
+  umbrella header "Pods-Bonzai Florist-umbrella.h"
+
+  export *
+  module * { export * }
+}
