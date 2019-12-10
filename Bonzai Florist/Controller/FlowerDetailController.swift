@@ -12,6 +12,8 @@ import Braintree
 
 class FlowerDetailController: UIViewController {
     
+    var braintreeClient: BTAPIClient!
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -19,11 +21,13 @@ class FlowerDetailController: UIViewController {
     
     var selectedPhoto: Photo?
     
-    let braintreeClient = BTAPIClient(authorization: "sandbox_csgphtwc_q8x7kd5d9p62bhg7")
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        braintreeClient = BTAPIClient(authorization: "sandbox_7b8pgrqn_qmh7f4hs9jh6zms4")
         
         btnPurchase.roundedButton()
         
@@ -53,41 +57,33 @@ class FlowerDetailController: UIViewController {
     
     @IBAction func btnPurchase(_ sender: Any) {
         
-        let payPalDriver = BTPayPalDriver(apiClient: braintreeClient!)
-        payPalDriver.viewControllerPresentingDelegate = self
-        payPalDriver.appSwitchDelegate = self // Optional
-        
-        // Specify the transaction amount here. "2.32" is used in this example.
-        let request = BTPayPalRequest(amount: "100.0")
-        request.currencyCode = "CAD" // Optional; see BTPayPalRequest.h for more options
-        
-        payPalDriver.requestOneTimePayment(request) { (tokenizedPayPalAccount, error)
-            in
-            if let tokenizedPayPalAccount = tokenizedPayPalAccount {
-                print("Got a nonce: \(tokenizedPayPalAccount.nonce)")
-                
-                // Access additional information
-                let email = tokenizedPayPalAccount.email
-                let firstName = tokenizedPayPalAccount.firstName
-                let lastName = tokenizedPayPalAccount.lastName
-                let phone = tokenizedPayPalAccount.phone
-                
-                // See BTPostalAddress.h for details
-                let billingAddress = tokenizedPayPalAccount.billingAddress
-         
-                let shippingAddress = tokenizedPayPalAccount.shippingAddress
-                print(email ?? "", firstName ?? "" , lastName ?? "" , phone ?? " ", billingAddress ?? "", shippingAddress ?? "")
-                // Making request to server
-                self.sendRequestPaymentToServer(nonce: tokenizedPayPalAccount.nonce, amount: "100.0")
-            }
-            else if let error = error {
-                print(error.localizedDescription)
-                // Handle error here...
-            }
-            else {
-                // Buyer canceled payment approval print("Bauyer canceled payment approval")
-            }
-        }
+        let payPalDriver = BTPayPalDriver(apiClient: braintreeClient)
+             payPalDriver.viewControllerPresentingDelegate = self
+             payPalDriver.appSwitchDelegate = self // Optional
+             
+             // Specify the transaction amount here. "2.32" is used in this example.
+             let request = BTPayPalRequest(amount: "2.32")
+             request.currencyCode = "CAD" // Optional; see BTPayPalRequest.h for more options
+
+             payPalDriver.requestOneTimePayment(request) { (tokenizedPayPalAccount, error) in
+                 if let tokenizedPayPalAccount = tokenizedPayPalAccount {
+                     print("Got a nonce: \(tokenizedPayPalAccount.nonce)")
+
+                     // Access additional information
+                     let email = tokenizedPayPalAccount.email
+                     let firstName = tokenizedPayPalAccount.firstName
+                     let lastName = tokenizedPayPalAccount.lastName
+                     let phone = tokenizedPayPalAccount.phone
+
+                     // See BTPostalAddress.h for details
+                     let billingAddress = tokenizedPayPalAccount.billingAddress
+                     let shippingAddress = tokenizedPayPalAccount.shippingAddress
+                 } else if let error = error {
+                     // Handle error here...
+                 } else {
+                     // Buyer canceled payment approval
+                 }
+             }
     }
     
     func sendRequestPaymentToServer(nonce: String, amount: String) {

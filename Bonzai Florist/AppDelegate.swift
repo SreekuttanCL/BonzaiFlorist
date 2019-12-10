@@ -18,13 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        BTAppSwitch.setReturnURLScheme("com.SKSoftTech.Bonzai-Florist")
+        BTAppSwitch.setReturnURLScheme("com.SKSoftTech.Bonzai-Florist.payments")
         return true
     }
     
     func application(_ app: UIApplication, open url: URL, options:
         [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
-        if url.scheme?.localizedCaseInsensitiveCompare("com.SKSoftTech.Bonzai-Florist")
+        if url.scheme?.localizedCaseInsensitiveCompare("com.SKSoftTech.Bonzai-Florist.payments")
             == .orderedSame
         {
             return BTAppSwitch.handleOpen(url, options: options) }
