@@ -14,6 +14,7 @@
 		DA63B1802389F62800178EFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA63B17E2389F62800178EFD /* Main.storyboard */; };
 		DA63B1822389F62F00178EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA63B1812389F62F00178EFD /* Assets.xcassets */; };
 		DA63B1852389F62F00178EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA63B1832389F62F00178EFD /* LaunchScreen.storyboard */; };
+		DA7EB00323A12B1300BEB8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7EB00223A12B1300BEB8C4 /* Assets.xcassets */; };
 		DA83B6512391F6FD00157FB6 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA83B6502391F6FD00157FB6 /* SignUpController.swift */; };
 		DA83B6532391FD6800157FB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA83B6522391FD6800157FB6 /* GoogleService-Info.plist */; };
 		DA83B6552391FFCC00157FB6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA83B6542391FFCC00157FB6 /* HomeController.swift */; };
@@ -37,6 +38,7 @@
 		DA63B1812389F62F00178EFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA63B1842389F62F00178EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA63B1862389F62F00178EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7EB00223A12B1300BEB8C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
 		DA83B6502391F6FD00157FB6 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		DA83B6522391FD6800157FB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA83B6542391FFCC00157FB6 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				DA63B17A2389F62800178EFD /* SceneDelegate.swift */,
 				DA63B1812389F62F00178EFD /* Assets.xcassets */,
 				DA83B6522391FD6800157FB6 /* GoogleService-Info.plist */,
+				DA7EB00223A12B1300BEB8C4 /* Assets.xcassets */,
 				DA63B1832389F62F00178EFD /* LaunchScreen.storyboard */,
 				DA63B1862389F62F00178EFD /* Info.plist */,
 			);
@@ -223,6 +226,7 @@
 				DA83B6532391FD6800157FB6 /* GoogleService-Info.plist in Resources */,
 				DA63B1822389F62F00178EFD /* Assets.xcassets in Resources */,
 				DA63B1802389F62800178EFD /* Main.storyboard in Resources */,
+				DA7EB00323A12B1300BEB8C4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

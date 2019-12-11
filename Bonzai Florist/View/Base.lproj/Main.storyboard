@@ -55,6 +55,10 @@
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="AppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ddp-2i-dMF">
                                 <rect key="frame" x="87" y="67" width="239" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="9BL-Qi-GCf"/>
+                                    <constraint firstAttribute="height" constant="202" id="jWJ-hg-XVW"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKh-QJ-4x8">
                                 <rect key="frame" x="32" y="770.5" width="275" height="37.5"/>
@@ -415,10 +419,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AppIcon" width="452" height="500"/>
+        <image name="AppIcon" width="226" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vtI-2b-VB0"/>
+        <segue reference="Bhc-3p-4zG"/>
         <segue reference="QRz-UJ-I0J"/>
     </inferredMetricsTieBreakers>
 </document>

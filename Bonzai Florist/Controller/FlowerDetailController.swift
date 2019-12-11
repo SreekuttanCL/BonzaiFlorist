@@ -9,6 +9,7 @@
 import UIKit
 import AlamofireImage
 import Braintree
+import AVFoundation
 
 class FlowerDetailController: UIViewController {
     
@@ -20,9 +21,6 @@ class FlowerDetailController: UIViewController {
     @IBOutlet weak var btnPurchase: UIButton!
     
     var selectedPhoto: Photo?
-    
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +37,8 @@ class FlowerDetailController: UIViewController {
         
         //downloading images
         downloadImage(imageURL: (self.selectedPhoto?.url!)!)
+        
+        self.textToSpeech(textToSay: "The price of \(selectedPhoto?.title) is 10 dollars")
     }
     
     func downloadImage(imageURL: String) {
@@ -78,6 +78,12 @@ class FlowerDetailController: UIViewController {
                      // See BTPostalAddress.h for details
                      let billingAddress = tokenizedPayPalAccount.billingAddress
                      let shippingAddress = tokenizedPayPalAccount.shippingAddress
+                    
+                    let alert = UIAlertController(title: "Sucessful", message: "Order placed sucessfully", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title:"Ok" , style: .default, handler: nil))
+                    self.present(alert, animated: true)
+                    
+                    self.textToSpeech(textToSay: "Order Placed sucessfully")
                  } else if let error = error {
                      // Handle error here...
                  } else {
@@ -106,7 +112,21 @@ class FlowerDetailController: UIViewController {
         }.resume()
         
     }
+    
+    func textToSpeech( textToSay: String){
+        // Line 1. Create an instance of AVSpeechSynthesizer.
+        let speechSynthesizer = AVSpeechSynthesizer()
+        // Line 2. Create an instance of AVSpeechUtterance and pass in a String to be spoken.
+        let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: textToSay)
+        //Line 3. Specify the speech utterance rate. 1 = speaking extremely the higher the values the slower speech patterns. The default rate, AVSpeechUtteranceDefaultSpeechRate is 0.5
+        speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 4.0
+        // Line 4. Specify the voice. It is explicitly set to English here, but it will use the device default if not specified.
+        speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+        // Line 5. Pass in the urrerance to the synthesizer to actually speak.
+            speechSynthesizer.speak(speechUtterance)
+    }
 }
+
 
 
 extension FlowerDetailController : BTViewControllerPresentingDelegate{
